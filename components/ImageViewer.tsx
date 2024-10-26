@@ -8,7 +8,7 @@ type Props = {
 }
 
 const ImageViewer = ({imgSource, selectedImage}: Props) => {
-  const imageSource = selectedImage ? { uri: selectedImage} : imgSource
+  const imageSource = selectedImage ? selectedImage : imgSource
 
   return (
     <Image source={imageSource} style={styles.image} />
